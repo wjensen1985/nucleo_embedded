@@ -8,7 +8,7 @@
 - screen session for sending over usb:
     - check name to use, run command: ls /dev/tty* -> find stm device, usually ACM0
     - start session: screen /dev/ttyACM0 115200 8N1
-        - screen -r to rejoin session (ctrl+a, ctrl+z to exit within session)
+        - screen -r to rejoin session (ctrl+a, ctrl+z to exit within session; ctrl+a, K to kill session)
     - to kill session once exited:
         - screen -ls to get session id: sessionID.pts-....
         - screen -S sessionID -X quit
